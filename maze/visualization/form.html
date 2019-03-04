@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block content %}
+<h3>Hello</h3>
+こんにちは。{{ name }}さん。
+<br />
+<p>
+<img src="/static/images/fig2.png" alt="fig2">
+</p>
+<br />
+
+
+<form method="POST" action="/confirm" enctype="multipart/form-data">
+  画像選択<input type="file" id="img_data" name="img_data">
+  <input type="submit" value="送信">
+  <p>サイズを選択します
+  <select name="size">
+    <option value="1">10</option>
+    <option value="2">20</option>
+    <option value="3">30</option>
+  </select>
+</p>
+</form>
+{% endblock %}

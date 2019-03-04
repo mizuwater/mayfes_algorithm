@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2>出力結果</h2>
+<br />
+辺と頂点のデータ
+<br />
+
+{{ sss }}
+<br />
+
+<br />
+
+
+  {% if img_url %}
+
+    <img src="{{ img_url }}" alt="Image">
+
+  {% endif %}
+<br />
+<br />
+
+<form method="POST" action="/show" enctype="multipart/form-data">
+
+  <input type="submit" value="GO">
+>
+{% endblock %}
