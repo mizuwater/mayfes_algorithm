@@ -1,0 +1,3 @@
+visualization readme
+
+このフォルダ(visualization)には可視化部分も含めたプログラムを入れていきましょう.
